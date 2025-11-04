@@ -3,12 +3,31 @@ using System.Security.Cryptography;
 
 class Program
 {
-    static void testFunction(int x)
+
+    static void TestValues(int x, float y, double z)
     {
-        Console.WriteLine($"The value is {x }");
+        Console.WriteLine($"The values are: {x}, {y}, {z}");
     }
+
+    static void OneLIneFunction()
+    {
+        Console.WriteLine("Blalasdflasdfl");
+    }
+    static int AddValues(int n1, int n2, int n3)
+    {
+        int total = n1 + n2 + n3;
+        return total;
+    }
+
+
     static void Main(string[] args)
     {
+
+        TestValues(10, (float)123.234, 23423.2342342340);
+
+        int total = AddValues(10, 20, 30);
+        Console.WriteLine($"The total is: {total}");
+
         // Console.WriteLine("Hello Sandbox World!");
         // string firstName;
         // string lastName;
@@ -45,36 +64,94 @@ class Program
 
         // If statements, ||, &&, !
 
-        int x = 10;
+        // int x = 10;
 
-        if (!(x == 11 || x == 12 && x == 13 && x != 23))
-        {
-            Console.WriteLine("X is 10");
-        }
-        else if (x == 435)
-        {
-            Console.WriteLine("Hey Bob");
-        }
-        else
-        {
-            Console.WriteLine(Math.Pow(2, 10));   
-        }
-        Console.WriteLine("X is who knows");
-
-        Console.WriteLine($"{x}, {++x}, {x++}, {x}");
+        // if (!(x == 11 || x == 12 && x == 13 && x != 23))
+        // {
+        //     Console.WriteLine("X is 10");
+        // }
+        // else if (x == 435)
+        // {
+        //     Console.WriteLine("Hey Bob");
+        // }
+        // else
+        // {
+        // }
+        // Console.WriteLine(Math.Pow(2, 64));
+        // // Console.WriteLine("X is who knows");
+        // int x = 10;
+        // Console.WriteLine($"{x}, {++x}, {x += 1}, {x}");
 
         // Loops, For, while, do while, foreach
 
+        // for (int i = 0; i < 20; i++)
+        // {
+        //     Console.WriteLine($"The value of i is: {i}");
+        // }
+
+        // for (int i = 0; i <= 1000; i += 10)
+        // {
+        //     Console.WriteLine($"The value of i is: {i}");
+        // }
+
+        // for (double  i = 1.234; i < 12.234234; i += .234)
+        // {
+        //     Console.WriteLine($"The value of i is: {i}");
+        // }
+
+        // bool done = false;
+
+        // while (!done)
+        // {
+        //     Console.Write("Input your age: ");
+        //     int age = int.Parse(Console.ReadLine());
+        //     if (age >= 0 && age <= 125)
+        //     {
+        //         done = true;
+        //         Console.WriteLine($"Super age: {age}");
+        //     }
+
+        // }
+
+        // done = false;
+        // do
+        // {
+        //     Console.Write("Input your age: ");
+        //     int age = int.Parse(Console.ReadLine());
+        //     if (age >= 0 && age <= 125)
+        //     {
+        //         done = true;
+        //         Console.WriteLine($"Super age: {age}");
+        //     }
+
+        // } while (!done);
+
         // Lists List <int> numbers = new <int>List();
 
+        // List<int> numbers = new List<int>();
+        // numbers.Add(10);
+        // numbers.Add(2134);
+        // numbers.Add(-234);
+        // numbers.Add(101);
+        // foreach (int n in numbers)
+        // {
+        //     Console.WriteLine($"The number is: {n}");
+        // }
+
+        // for(int index = 0; index < numbers.Count; index++)
+        // {
+        //     Console.WriteLine(numbers[index]);
+        // }
+
         // Functions
+
 
         // Random randomGenerator = new Random();
         // int number = randomGenerator.Next(1, 11);
 
         // Console.WriteLine($"The number is {number}");
 
-        
+
 
 
     }
