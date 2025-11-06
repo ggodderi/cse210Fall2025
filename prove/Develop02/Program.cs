@@ -6,7 +6,23 @@ class Program
     {
         Menu journalMenu = new Menu();
 
-        journalMenu.ProcessMenu();
+        int userSelection;
+
+        userSelection = journalMenu.ProcessMenu();
+
+        switch(userSelection)
+        {
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+        }
 
     }
 }
