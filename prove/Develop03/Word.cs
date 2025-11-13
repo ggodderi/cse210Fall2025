@@ -22,9 +22,33 @@ class Word
         _isHidden = true;
     }
 
+    private string LocalGetWordString()
+    {
+        // If the word is hidden, return underscore characters for the word
+        // One for each character in the word.
+        // Else return the actual word.
+        
+        if(_isHidden)
+        {
+            string newString = "";
+            foreach(char c in _word)
+            {
+                newString += '_';
+            }
+            return newString;
+        }
+        else
+            return _word;
+    }
+
     public void DisplayWord()
     {
-        Console.WriteLine(_word);
+        Console.Write(LocalGetWordString());
+    }
+
+    public string GetWordString()
+    {
+        return LocalGetWordString();
     }
 
 }
