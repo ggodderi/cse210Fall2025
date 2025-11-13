@@ -1,4 +1,5 @@
 using System.IO.Compression;
+using System.Runtime.CompilerServices;
 
 class Word
 {
@@ -9,6 +10,16 @@ class Word
     {
         _word = word;
         _isHidden = false;
+    }
+
+    public bool IsHidden()
+    {
+        return _isHidden;
+    }
+
+    public void HideWord()
+    {
+        _isHidden = true;
     }
 
     public void DisplayWord()
