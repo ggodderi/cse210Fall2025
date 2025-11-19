@@ -25,7 +25,7 @@ class Circle
         {
             _radius = radius;
         }
-            
+        
     }
 
     public double GetCircleArea()
