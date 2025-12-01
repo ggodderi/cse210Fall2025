@@ -3,14 +3,15 @@
 
     public static void DisplayPersonInformation(Person person)
     {
-        Console.WriteLine(person.GetPersonInformation());
+        Console.Write(person.GetPersonInformation());
+        Console.WriteLine($" ${person.GetSalary()}");
     }
 
     static void Main(string[] args)
     {
         // Console.WriteLine("Ca va?");
-        Person myPerson = new Person("Bob", "Bubba", 54, 287);
-        Console.WriteLine(myPerson.GetPersonInformation());
+        // Person myPerson = new Person("Bob", "Bubba", 54, 287);
+        // Console.WriteLine(myPerson.GetPersonInformation());
 
         Police myPolice = new Police("Taser, flash light, gun", "Sally", "Jones", 34, 110);
         Console.WriteLine(myPolice.GetPersonInformation());
@@ -31,7 +32,7 @@
 
 
         List<Person> myPeople = new List<Person>();
-        myPeople.Add(myPerson);
+        // myPeople.Add(myPerson);
         myPeople.Add(myDoctor);
         myPeople.Add(myPolice);
         myPeople.Add(mySurgeon);

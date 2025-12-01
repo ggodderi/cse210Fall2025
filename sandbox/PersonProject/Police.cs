@@ -1,5 +1,6 @@
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
+using System.Threading.Channels;
 
 class Police : Person
 {
@@ -10,14 +11,14 @@ class Police : Person
         _weapons = weapons;
     }
 
-    // public string GetPoliceInformation()
-    // {
-    //     return $"{GetPersonInformation()}, Weapons: {_weapons}";
-    // }
-
     public override string GetPersonInformation()
     {
         return $"{base.GetPersonInformation()}, Weapons: {_weapons}";
+    }
+
+    public override double GetSalary()
+    {
+        return 50000.23;
     }
     
 }

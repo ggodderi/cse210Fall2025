@@ -10,14 +10,14 @@ class Doctor : Person
         _tools = tools;
     }
 
-    // public string GetDoctorInformation()
-    // {
-    //     return $"{base.GetPersonInformation()}, Tools: {_tools}";
-    // }
-
     public override string GetPersonInformation()
     {
         return $"{base.GetPersonInformation()}, Tools: {_tools}";
+    }
+
+    public override double GetSalary()
+    {
+        return 200000.23;
     }
 
 }
