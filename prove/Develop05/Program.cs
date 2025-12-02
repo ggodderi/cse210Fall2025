@@ -11,6 +11,10 @@ class Program
         while (response != 6)
         {
             response = menu.DisplayMenu();
+
+            Goal myGoal = new Goal("Run", "Run a lot faster");
+            Console.WriteLine(myGoal.GetConsoleString());
+
         }
     }
 }
