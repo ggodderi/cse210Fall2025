@@ -23,8 +23,14 @@ class Program
         Console.WriteLine($"The number of days in November is : {DaysInTheMonth[(int)November]}");
         Console.WriteLine($"The number of days in August is : {DaysInTheMonth[(int)August]}");
 
+<<<<<<< HEAD
         Console.WriteLine($"The number of days in February is : {DaysInTheMonth[(int)February]}");
         Console.WriteLine($"The number of days in June is : {DaysInTheMonth[(int)June]}");
+=======
+        
+        Console.WriteLine($"The number of days in January is : {DaysInTheMonth[(int)January]}");
+        Console.WriteLine($"The number of days in May is : {DaysInTheMonth[(int)May]}");
+>>>>>>> TestBranch
 
         // Console.WriteLine("Hello");
         // string myString = null;
