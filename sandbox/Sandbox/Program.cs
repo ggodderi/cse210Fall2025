@@ -2,36 +2,43 @@ using System;
 using System.Security.AccessControl;
 using System.Security.Cryptography;
 
+using static Months;
+enum Months {January, February, March, April, May, June,
+    July, August, September, October, November, December}
+
 class Program
 {
-
-    // static void TestValues(int x, float y, double z)
-    // {
-    //     Console.WriteLine($"The values are: {x}, {y}, {z}");
-    // }
-
-    // static void OneLIneFunction()
-    // {
-    //     Console.WriteLine("Blalasdflasdfl");
-    // }
-    // static int AddValues(int n1, int n2, int n3)
-    // {
-    //     int total = n1 + n2 + n3;
-    //     return total;
-    // }
 
 
     static void Main(string[] args)
     {
 
-        Console.WriteLine("Hello");
 
-        string animationString = "\\|/-";
-        int sleepTime = 250;
-        int duration = 13;
-        int index = 0;
-        DateTime currentTime = DateTime.Now;
-        DateTime endTime = currentTime.AddSeconds(duration);
+        // int DECEMBER = 12;
+        int [] DaysInTheMonth = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+        Months CurrentMonth = December;
+
+        Console.WriteLine($"The number of days in December is : {DaysInTheMonth[(int)December]}");
+        Console.WriteLine($"The number of days in December is : {DaysInTheMonth[(int)CurrentMonth]}");
+
+        // Console.WriteLine("Hello");
+        // string myString = null;
+
+        // int? length = myString?.Length;
+
+        // int x = 19;
+
+        // if()
+
+        // Console.WriteLine($"This is a test: {myString}");
+
+        // string animationString = "\\|/-";
+        // int sleepTime = 250;
+        // int duration = 13;
+        // int index = 0;
+        // DateTime currentTime = DateTime.Now;
+        // DateTime endTime = currentTime.AddSeconds(duration);
 
         // while(DateTime.Now < endTime)
         // {
@@ -53,19 +60,19 @@ class Program
         // }
         // Console.CursorVisible = true;
         
-        Console.CursorVisible = false;
-        string animationString2 = "(^_^)(-_-)";
+        // Console.CursorVisible = false;
+        // string animationString2 = "(^_^)(-_-)";
         
-        while(DateTime.Now < endTime)
-        {
-            Console.Write(animationString2[0..5]);
-            Thread.Sleep(sleepTime);
-            Console.Write("\b\b\b\b\b");
-            Console.Write(animationString2[5..]);
-            Thread.Sleep(sleepTime);
-            Console.Write("\b\b\b\b\b");
-        }
-        Console.CursorVisible = true;
+        // while(DateTime.Now < endTime)
+        // {
+        //     Console.Write(animationString2[0..5]);
+        //     Thread.Sleep(sleepTime);
+        //     Console.Write("\b\b\b\b\b");
+        //     Console.Write(animationString2[5..]);
+        //     Thread.Sleep(sleepTime);
+        //     Console.Write("\b\b\b\b\b");
+        // }
+        // Console.CursorVisible = true;
 
 
 
