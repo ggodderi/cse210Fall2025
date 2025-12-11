@@ -21,6 +21,7 @@ class Program
         Console.WriteLine($"The number of days in December is : {DaysInTheMonth[(int)CurrentMonth]}");
 
         Console.WriteLine($"The number of days in November is : {DaysInTheMonth[(int)November]}");
+        Console.WriteLine($"The number of days in August is : {DaysInTheMonth[(int)August]}");
         // Console.WriteLine("Hello");
         // string myString = null;
 
